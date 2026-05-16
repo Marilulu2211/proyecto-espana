@@ -1,50 +1,83 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto España</title>
+    <style>
+        body { font-family: sans-serif; margin: 0; background: #f0f0f0; text-align: center; }
+        
+        /* Contenedor del carrusel */
+        .carrusel {
+            display: flex;
+            overflow-x: auto; /* Esto permite deslizar con el dedo o mouse */
+            scroll-snap-type: x mandatory;
+            gap: 10px;
+            padding: 20px;
+            background: #333;
+        }
+        
+        .carrusel img {
+            flex: 0 0 90%; /* Cada diapo ocupa el 90% del ancho */
+            scroll-snap-align: center;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+        }
 
-<title>Proyecto Aula; España. BGT4</title>
+        .instruccion { font-size: 14px; color: #666; padding: 10px; }
 
-<!-- Fuente con soporte para Ñ -->
-<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
-
-<style>
-
-    body{
-        margin:0;
-        height:100vh;
-        display:flex;
-        justify-content:center;
-        align-items:center;
-        background:white;
-    }
-
-    h1{
-        font-family: 'Pacifico', cursive;
-        font-size:70px;
-        color:#b22222;
-        text-align:center;
-        padding:30px 50px;
-        border:5px solid #006847;
-        border-radius:25px;
-        box-shadow:0 8px 20px rgba(0,0,0,0.15);
-        background:linear-gradient(to right, #fff5f5, #ffffff, #f5fff7);
-    }
-
-</style>
+        /* Contenedor de la página del restaurante */
+        .restaurante-frame {
+            width: 95%;
+            height: 600px;
+            margin: 20px auto;
+            border: 5px solid #27ae60;
+            border-radius: 15px;
+            overflow: hidden;
+        }
+    </style>
 </head>
-
 <body>
 
-<h1>Proyecto Aula; España. BGT4</h1>
-<div style="position: relative; width: 100%; height: 0; padding-top: 56.2500%;
- padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
- border-radius: 8px; will-change: transform;">
-  <iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
-    src="https://www.canva.com/design/DAHJdtfjiaE/h9QbxpOqgL3XMEnJ4EgFyw/view?embed" allowfullscreen="allowfullscreen" allow="fullscreen">
-  </iframe>
-</div>
-<a href="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAHJdtfjiaE&#x2F;h9QbxpOqgL3XMEnJ4EgFyw&#x2F;view?utm_content=DAHJdtfjiaE&amp;utm_campaign=designshare&amp;utm_medium=embeds&amp;utm_source=link" target="_blank" rel="noopener">Copia de Presentación cultura y tradiciones de España ilustrativo divertido rojo y amarillo</a> de Marilú Itzel Sosa González
+    <h1>Presentación del Proyecto</h1>
+    <p class="instruccion">← Desliza las diapositivas con tu dedo o mouse →</p>
+
+   <div class="carrusel">
+        <img src="diapo1.png" alt="Diapositiva 1">
+        <img src="diapo2.png" alt="Diapositiva 2">
+        <img src="diapo3.png" alt="Diapositiva 3">
+        <img src="diapo4.png" alt="Diapositiva 4">
+        <img src="diapo5.png" alt="Diapositiva 5">
+        <img src="diapo6.png" alt="Diapositiva 6">
+        <img src="diapo7.png" alt="Diapositiva 7">
+        <img src="diapo8.png" alt="Diapositiva 8">
+        <img src="diapo9.png" alt="Diapositiva 9">
+        <img src="diapo10.png" alt="Diapositiva 10">
+        <img src="diapo11.png" alt="Diapositiva 11">
+        <img src="diapo12.png" alt="Diapositiva 12">
+        <img src="diapo13.png" alt="Diapositiva 13">
+        <img src="diapo14.png" alt="Diapositiva 14">
+        <img src="diapo15.png" alt="Diapositiva 15">
+        <img src="diapo16.png" alt="Diapositiva 16">
+        <img src="diapo17.png" alt="Diapositiva 17">
+        <img src="diapo18.png" alt="Diapositiva 18">
+        <img src="diapo19.png" alt="Diapositiva 19">
+        <img src="diapo20.png" alt="Diapositiva 20">
+        <img src="diapo21.png" alt="Diapositiva 21">
+        <img src="diapo22.png" alt="Diapositiva 22">
+        <img src="diapo23.png" alt="Diapositiva 23">
+        <img src="diapo24.png" alt="Diapositiva 24">
+    </div>
+        
+
+    <hr>
+
+    <h2>Nuestro Restaurante</h2>
+    <div class="restaurante-frame">
+        <iframe src="https://marilulu2211.github.io/Men-abi/" width="100%" height="100%" style="border:none;"></iframe>
+    </div>
+
+    <footer style="padding: 20px;">Fin del Proyecto</footer>
+
 </body>
 </html>
