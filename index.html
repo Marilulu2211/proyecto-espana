@@ -18,11 +18,14 @@
         }
         
         .carrusel img {
-            flex: 0 0 90%; /* Cada diapo ocupa el 90% del ancho */
-            scroll-snap-align: center;
-            border-radius: 10px;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.5);
-        }
+    flex: 0 0 auto;       /* Evita que la imagen se estire a la fuerza */
+    width: 85%;           /* Controla qué tan ancha se ve en la pantalla */
+    max-width: 800px;     /* Evita que se haga gigante en pantallas de computadora */
+    height: auto;         /* MANTIENE LA PROPORCIÓN (ya no se verá chueca) */
+    object-fit: contain;  /* Ajusta la imagen dentro de su espacio de forma limpia */
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+}
 
         .instruccion { font-size: 14px; color: #666; padding: 10px; }
 
