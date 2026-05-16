@@ -17,14 +17,15 @@
             background: #333;
         }
         
-        .carrusel img {
-    flex: 0 0 auto;       /* Evita que la imagen se estire a la fuerza */
-    width: 85%;           /* Controla qué tan ancha se ve en la pantalla */
-    max-width: 800px;     /* Evita que se haga gigante en pantallas de computadora */
-    height: auto;         /* MANTIENE LA PROPORCIÓN (ya no se verá chueca) */
-    object-fit: contain;  /* Ajusta la imagen dentro de su espacio de forma limpia */
-    border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+        .carrusel {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    gap: 15px;
+    padding: 20px 10px;
+    background: #ffffff; /* Fondo blanco limpio */
+    align-items: center;
+    height: auto; /* Se ajusta exactamente al alto de la imagen */
 }
 
         .instruccion { font-size: 14px; color: #666; padding: 10px; }
